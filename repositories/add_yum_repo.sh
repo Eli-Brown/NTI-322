@@ -1,7 +1,7 @@
 #!/bin/bash
 # this is a script to add a yum repo on a given server.
 
-ip="10.128.0.13"                                                    # Please replace with your own IP
+ip="10.128.0.11"                                                    # Please replace with your own IP
 
 echo "[nti-320]
 name=Extra Packages for Centos from NTI-320 7 - $basearch
@@ -16,6 +16,11 @@ gpgcheck=0
 yum repolist
 
 yum search hello-world
-                                                     
+                              
+                              
+##                             
+#createrepo --update /repos/centos/7/extras/x86_64/Packages/
+#
+#
 
 
